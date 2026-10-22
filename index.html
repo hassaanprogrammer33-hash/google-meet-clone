@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>google Meet</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav>
+    <div class="top d-flex justify-content-between px-5 py-3">
+      <div class="child-top-1 text-white">
+        <span>3:14</span>
+        <span>PM</span>
+
+        <span class="px-2">|</span>
+
+        <span>byp-fbtv-okm</span>
+
+        <span class="bi bi-bootstrap mx-2 px-2 py-2 bg-danger rounded-4"></span>
+
+        <!-- Meeting Details Button -->
+        <span class="btn-info bi bi-info-circle"></span>
+      </div>
+
+      <div class="child-top-2 text-white">
+        <span class="d-none rounded-5 px-3 py-2 span-pny" style="background-color: #3c3c3c; cursor: pointer">
+          <span>PNY RAWALPINDI</span>
+          <span>(You,presenting,annotating)</span>
+        </span>
+
+        <span class="px-4">
+          <button class="btn-presentation px-2 py-1 rounded-5 border-0" style="background-color: #a8c7fa">
+            Stop presenting
+          </button>
+        </span>
+
+        <span class="bi bi-broadcast rounded-pill px-2 py-2 mx-2" style="background-color: #3c3c3c; color: #1a73e8">
+        </span>
+
+        <span class="bi bi-dice-2-fill rounded-circle rounded-pill px-2 py-2" style="background-color: #3c3c3c">
+        </span>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="left">
+    <div class="undelay d-none"></div>
+    <img src="img.png" alt="">
+
+    <!-- Google Meet Control Buttons Container -->
+    <div class="d-flex social-icons-card-1 rounded-5 align-items-center gap-2 bg-dark p-3 rounded-4"
+      style="width: fit-content;">
+
+
+      <div class="icons-1 d-none" style="position: absolute; bottom: 70%; left: 2%;">
+
+        <!-- Output of Microphone dots Group -->
+        <div class="d-flex gap-2 align-items-center">
+          <button class=" text-white rounded-5 d-flex align-items-center py-2"
+            style="border: 1px solid white; background-color: #282a2d;">
+            <i class="bi bi-mic-fill fs-5 "></i>
+            <span class="px-2">Microphone(RealteK(R)Audio...)</span><i class="bi bi-chevron-up  text-white pe-2"></i>
+          </button>
+          <button class=" text-white rounded-5 d-flex align-items-center  py-2"
+            style="border: 1px solid white; background-color: #282a2d;">
+            <i class="bi bi-volume-down fs-5"></i>
+            <span class="px-2">Speaker(RealteK(R)Audio...)</span><i class="bi bi-chevron-up  text-white pe-2"></i>
+          </button>
+          <i class="bi bi-gear text-white fs-3"></i>
+        </div>
+
+
+      </div>
+
+
+      <div class="icons-3 d-none" style="position: absolute; bottom: 70%; left: 2%;">
+
+        <!-- Output of video dots Group -->
+        <div class="d-flex gap-2 align-items-center">
+          <button class=" text-white rounded-5 d-flex align-items-center py-2"
+            style="border: 1px solid white; background-color: #282a2d;">
+            <i class="bi bi-camera-video  text-white pe-2 fs-5"></i>
+            <span class="pe-2">Permission ne...</span><i class="bi bi-chevron-up  text-white pe-2"></i>
+          </button>
+          <button class=" text-white rounded-5 d-flex align-items-center  py-2"
+            style="border: 1px solid white; background-color: #282a2d;">
+            <i class="bi bi-check-lg fs-5"></i>
+            <span class="px-2">Blur Background</span>
+          </button>
+          <button class=" text-white rounded-5 d-flex align-items-center  py-2"
+            style="border: 1px solid white; background-color: #282a2d;">
+
+            <span class="px-2">Background and effects</span></i>
+          </button>
+          <i class="bi bi-gear text-white fs-3"></i>
+        </div>
+
+
+      </div>
+
+
+
+
+
+
+      <div class="icons-4 d-none" style="position: absolute; bottom: 70%; left: 2%;">
+
+        <!-- Output of emojs  Group -->
+     
+          <button class=" text-white rounded-5 d-flex align-items-center gap-3 pe-5 px-3 py-2 "
+            style="border:none; background-color: #282a2d; font-size: 1.5rem;">
+            <i class="bi bi-heart-fill" style="color: #ef5592;"></i>
+            <i class="bi bi-hand-thumbs-up-fill" style="color: #ffca28;"></i>
+            <i class="bi bi-balloon-fill " style="color: #ffca28;"></i>            
+            <i class="bi bi-emoji-laughing-fill" style="color: #ffca28;"></i>
+            <i class="bi bi-emoji-frown-fill " style="color: #ffca28;"></i>
+            <i class="bi bi-emoji-expressionless-fill" style="color: #ffca28;"></i>
+            <i class="bi bi-emoji-sunglasses-fill" style="color: #ffca28;"></i>
+            <i class="bi bi-emoji-tear-fill" style="color: #ffca28;"></i>
+            <i class="bi bi-hand-thumbs-down-fill" style="color: #ffca28;"></i>
+           
+          </button>
+         
+   
+
+
+      </div>
+
+
+      <!-- Output of Microphone button Group -->
+      <div class="position-fixed tooltips-1 d-none"
+        style="top: 20%; background-color: #3c3c3c; font-size: .9rem; padding: 5px 6px;">Turn off microphone (ctrl+d)
+      </div>
+
+
+
+      <!-- Output of camera button group -->
+      <div class="position-fixed tooltips-2 d-none"
+        style="top: 20%; left: 20%; color: white; background-color: #3c3c3c; font-size: .9rem; padding: 5px 6px;">Show
+        more info</div>
+
+      <!-- output of display icon -->
+      <div class="position-fixed tooltips-3 d-none"
+        style="top: 20%; left: 35%; color: white; background-color: #3c3c3c; font-size: .9rem; padding: 5px 6px;">Share
+        screen</div>
+
+
+
+
+
+      <!-- output of  caption-->
+      <div class="position-fixed tooltips-5 d-none"
+        style="top: 20%; left: 45%; color: white; background-color: #3c3c3c; font-size: .9rem; padding: 5px 6px;">Turn
+        on caption(C or shift + c)</div>
+
+
+      <!-- output of  Raise hand-->
+      <div class="position-fixed tooltips-6 d-none"
+        style="top: 20%; left: 60%; color: white; background-color: #3c3c3c; font-size: .9rem; padding: 5px 6px;">Raise
+        hand(ctrl+alt+h)</div>
+
+
+      <!-- output of  three dots-->
+      <div class="position-fixed tooltips-7 d-none"
+        style="top: 20%; left: 73%; color: white; background-color: #3c3c3c; font-size: .9rem; padding: 5px 6px;">More
+        options</div>
+
+
+      <!-- output of  End Button-->
+      <div class="position-fixed tooltips-8 d-none"
+        style="top: 20%; left: 85%; color: white; background-color: #3c3c3c; font-size: .9rem; padding: 5px 6px;">End
+        call</div>
+
+      <div class="card card-info d-none w-50 px-3 py-3" style="position: fixed; left: 48%; bottom: 100%;">
+        <h6>You can't end this video call yet</h6>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, earum?</p>
+        <div class="d-flex">
+          <div class="btn text-info border-info">Just leave the call</div>
+          <div class="btn border-0 text-secondary" disabled>End the call for everyone</div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="icons-2 mx-3 my-3 position-relative">
+
+
+        <!-- Microphone Button Group -->
+        <div class="btn-group-pill d-inline-flex align-items-center rounded-pill px-2 py-1"
+          style="background-color: #282a2d; ">
+          <button class="btn btn-link text-white border-0 p-2 d-flex align-items-center justify-content-center"
+            style="width: 40px; height: 40px">
+            <i class="bi bi-three-dots fs-5 three-dots"></i>
+          </button>
+          <button class="btn text-white border-0 rounded-circle d-flex align-items-center justify-content-center"
+            style="background-color: #37393b; width: 44px; height: 44px">
+   
+            <i class="bi bi-mic-fill fs-5 micro-btn position-relative"></i>
+          </button>
+
+
+
+          </button>
+        </div>
+
+
+
+        <!-- Camera Button Group -->
+        <div class="btn-group-pill d-inline-flex align-items-center rounded-pill px-2 py-1 position-relative"
+          style="background-color: #282a2d">
+          <button class="btn btn-link text-white border-0 p-2 d-flex align-items-center justify-content-center"
+            style="width: 40px; height: 40px">
+            <i class="bi bi-chevron-up fs-6 camera-btn"></i>
+          </button>
+          <button class="btn text-white border-0 rounded-circle d-flex align-items-center justify-content-center"
+            style="background-color: #37393b; width: 44px; height: 44px">
+            <i class="bi bi-camera-video fs-5 position-relative micro-btn-1"></i>
+          </button>
+
+
+
+
+        </div>
+
+        <!--display icon  -->
+        <div class="d-inline-flex px-2 py-3">
+
+          <button class="rounded-circle text-white border-0 d-flex align-items-center justify-content-center"
+            style="background-color: #37393b; width: 44px; height: 44px;">
+            <i class="bi bi-display micro-btn-2  position-relative"></i>
+
+          </button>
+        </div>
+
+
+
+        <!--display emojs  -->
+        <div class="d-inline-flex px-2 py-3">
+
+          <button class="rounded-circle text-white border-0 d-flex align-items-center justify-content-center"
+            style="background-color: #37393b; width: 44px; height: 44px;">
+            <i class="bi bi-emoji-smile micro-btn-3  position-relative"></i>
+
+          </button>
+        </div>
+
+
+
+        <!--display captions  -->
+        <div class="d-inline-flex px-2 py-3">
+
+          <button class="rounded-circle text-white border-0 d-flex align-items-center justify-content-center"
+            style="background-color: #37393b; width: 44px; height: 44px;">
+            <i class="bi bi-badge-cc micro-btn-4  position-relative"></i>
+
+          </button>
+        </div>
+
+
+        <!--display Raise Hand Icon  -->
+        <div class="d-inline-flex px-2 py-3">
+
+          <button class="rounded-circle text-white border-0 d-flex align-items-center justify-content-center"
+            style="background-color: #37393b; width: 44px; height: 44px;">
+            <i class="bi bi-hand-index-thumb micro-btn-5 position-relative"></i>
+
+          </button>
+        </div>
+
+
+
+        <!--display Three Dots Vertical Icon  -->
+        <div class="d-inline-flex px-2 py-3">
+
+          <button class="rounded-circle text-white border-0 d-flex align-items-center justify-content-center"
+            style="background-color: #37393b; width: 44px; height: 44px;">
+            <i class="bi bi-three-dots-vertical micro-btn-6 position-relative"></i>
+
+          </button>
+        </div>
+
+
+        <!--display Phone Hangup Icon  -->
+        <div class="d-inline-flex px-2 py-3">
+
+          <button class="rounded-circle text-white border-0 d-flex align-items-center justify-content-center"
+            style="background-color: red; width: 44px; height: 44px;">
+            <i class="bi bi-telephone-x-fill End-call"></i>
+
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="right">
+      <div class="card rounded-0 px-4">
+        <div class="top-card d-flex justify-content-between align-items-center">
+          <h6 class="py-3">Meeting Details</h6>
+
+          <!-- Close Button -->
+          <div class="close-details bi bi-x-lg"></div>
+        </div>
+
+        <p>Joining info</p>
+
+        <a class="text-white text-decoration-none" href="https://meet.google.com/byp-fbtv-okm">
+          https://meet.google.com/byp-fbtv-okm
+        </a>
+
+        <div class="info-img mt-3">
+          <i class="bi bi-copy copy-icon"></i>
+
+          <span class="px-2"> Copy joining info </span>
+        </div>
+
+        <hr />
+
+        <p>Google Calendar attachments show up here</p>
+      </div>
+    </div>
+    <div class="right"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
