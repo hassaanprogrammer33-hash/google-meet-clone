@@ -1,0 +1,80 @@
+/* body main overflow: hideen vertically or horizantaaly scroll bar say bachnay ka leya kya ha. */
+
+/* .left video main object-fit : cover is leya istamal keya ha ta kay  video pore width cover karain*/
+
+/*  yahan height: calc(100vh - 80px);  istamal karen ka maksad yeh tha kay jab main simple height:100vh istamal karta tha to uper nav nazar ni ata tha  to kuch height chupanay kay leyay may nay yeh istamal keya. */
+
+body{
+    background-color: #333537;
+    overflow: hidden;
+}
+
+.left{
+    width: 100%;
+    height: calc(100vh - 60px);
+    overflow: hidden;
+}
+.left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right{
+    display: block;
+}
+
+
+/* .active class is make in js that directly connect wth css.In simple in this active class we remove display none by display block and then give him positio fixes. */
+.right.active{
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 25%;
+    height: 100vh;
+    background-color: #3c3c3c;
+    z-index: 10;
+    transition: all 0.3s;
+
+    /* Z-index is use because in future if we add postion fixed property to any element they not override it.For this we use. */
+}
+
+.right .card{
+    background-color: #3c3c3c;
+    color: white;
+    width: 100%;
+    height: 100%;
+
+}
+
+/* .social-icons-card{
+    background-color: #333537;
+    width: 50%;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    right: 25%;
+    transform: translatey(-50px);
+} */
+.social-icons-card-1{
+    background-color: #333537;
+    width: 50%;
+    height: 200px;
+    position: fixed;
+    bottom: 0;
+    right: 27%;
+    transform: translatey(-20px);
+}
+.tooltips-1{
+    color: white;
+    
+
+}
+
+.undelay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0,0.8);
+}
